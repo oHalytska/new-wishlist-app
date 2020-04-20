@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.356),
+      rgba(240, 243, 255, 0.8)
+    ),
+    url('../img/bg-images.jpeg');
+  background-size: cover;
+  background-position: top;
+}
+.box {
+  text-align: center;
+  margin: 50px auto;
+}
+.main-heading {
+  font-size: 48px;
+  margin-top: 40px;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 1px;
+  color: rgb(64, 10, 192);
+}
+
+.wish-list {
+  margin: 50px auto;
+  background-color: #fff;
+  width: 35%;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(7, 4, 36, 0.151);
+}
+.item {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.date {
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+}
+
+input {
+  font-size: 12px;
+  height: 5vh;
+  text-align: center;
+  color: rgb(61, 10, 180);
+  font-weight: 500;
+}
+
+.title-item {
+  font-size: 18px;
+}
+
+.btn {
+  padding: 3px 3px;
+  border: none;
+}
+
+.btn-delete {
+  background-color: none;
+  color: rgb(139, 139, 139);
+}
+
+.btn-delete:hover {
+  color: rgb(238, 44, 77);
+}
+
+.btn-add {
+  margin-left: 10px;
+  padding: 7px 8px;
+  border-radius: 50px;
+  background-color: rgb(75, 15, 238);
+  color: rgb(247, 247, 247);
+}
+
+.btn-add:hover {
+  background-color: rgb(119, 15, 238);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="box">
+    <div>
+      <h1 class="main-heading">Wish List</h1>
+    </div>
+
+    <div class="wish-list">
+      <% newListItems.forEach(function(item) { %>
+      <div>
+        <form action="/delete" method="POST">
+          <div class="item">
+            <p class="title-item"><%= item.title %></p>
+            <p class="date">
+              <%= item.date.toLocaleString('en', { day:'numeric', month: 'long',
+              year:'numeric'}) %>
+            </p>
+            <button
+              name="button"
+              value="<%=item.id %>"
+              onchange="this.form.submit()"
+              class="btn btn-delete"
+            >
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </form>
+        <% }) %>
+
+        <div class="">
+          <form class="" action="/" method="POST">
+            <input
+              type="text"
+              name="newItem"
+              placeholder="Add your wish"
+              autocomplete="off"
+            />
+            <input type="date" name="dateItem" autocomplete="on" />
+            <button class="btn btn-add" type="submit" name="list" value="list">
+              <i class="fas fa-plus"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
